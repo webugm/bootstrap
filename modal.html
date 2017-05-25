@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>modal 模態彈窗</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 基本實例 -->
+    <div class="container">
+      <h2>Basic Modal Example</h2>
+      <div class="alert alert-success">
+        <p>
+          Add 
+          <code class="w3-codespan">data-toggle="modal"</code> and 
+          <code class="w3-codespan">data-target="#modalID"</code> to any element.
+        </p>
+
+        <p>
+          <strong>Note:</strong> For <code class="w3-codespan">&lt;a&gt;</code> elements, omit 
+          <code class="w3-codespan">data-target</code>, and use <code class="w3-codespan">href="#modalID"</code> instead:
+        </p>
+        <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp" class="btn btn-primary btn-lg" target="_blank">參考網站</a>
+      </div>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="container">
+      <ul>
+        <li><a href="http://www.w3school.com.cn/cssref/pr_opacity.asp" target="_blank">opacity：</a> 設定不透明級別 1:不透明 -> 0:透明</li>
+
+        <li><a href="http://www.w3school.com.cn/cssref/pr_class_position.asp" target="_blank">position：</a> 規定元素的定位類型</li>
+
+        <li><a href="http://www.w3school.com.cn/cssref/css_colors_legal.asp" target="_blank">background-color：</a> CSS 背景颜色值</li>
+      </ul>
+    </div>
+
+     
+
+
+
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
