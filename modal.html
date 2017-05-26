@@ -18,6 +18,9 @@
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
+    <link href="http://cdn.bootcss.com/prettify/r298/prettify.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/prettify/r298/prettify.js"></script>
+    
   </head>
   <body>
     <!-- 基本實例 -->
@@ -36,13 +39,12 @@
         </p>
         <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp" class="" target="_blank">參考網站</a>
       </div>
+
       <!-- Trigger the modal with a button -->
       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
       <!-- Modal -->
       <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
+        <div class="modal-dialog">        
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
@@ -55,13 +57,44 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
-          </div>
-          
+          </div>          
         </div>
       </div>
 
       
     </div>
+    <!-- 圖解 -->
+    <div class="container">
+      <h2>安裝：</h2>
+      <img src="img/modal/setup.jpg" class="img-responsive">
+    </div>
+    <!-- 原始碼 -->
+    <div class="container">
+      <h2>原始碼</h2>
+      <pre class="prettyprint">
+        
+        &lt;!-- Modal --&gt;
+        &lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; role=&quot;dialog&quot;&gt;
+          &lt;div class=&quot;modal-dialog&quot;&gt;        
+            &lt;!-- Modal content--&gt;
+            &lt;div class=&quot;modal-content&quot;&gt;
+              &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;×&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;p&gt;Some text in the modal.&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;          
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      </pre>
+    </div>
+
 
     <div class="container">
       <ul>
