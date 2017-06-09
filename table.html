@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <br>
+    <div class="container">
+      <table id="form_table" class="table table-bordered table-striped table-hover treetable">
+        <!-- 標題 -->
+        <thead>
+          <tr class="active">
+            <th class="col-sm-5 text-center">標題</th>
+            <th class="col-sm-3 text-center">網址</th>
+            <th class="col-sm-1 text-center">外連</th>
+            <th class="col-sm-1 text-center">啟用</th>
+            <th class="col-sm-2 text-center">
+              <a href="?op=op_form&ofsn=0&kind=nav_home" class="btn btn-primary btn-xs" ait="IN (根目錄)建立子選單" title="IN 根目錄建立子選單">
+                新增
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <!-- 根目錄開始 -->
+        <tbody>
+
+          <tr id='tr_0' data-tt-id="0">
+            <td class="text-left" colspan="5">
+              <span class='folder'></span>
+              <i class="fa fa-home" aria-hidden="true"></i>根目錄             
+
+              <a href="#" class="btn btn-success btn-xs" onclick="jQuery('#form_table').treetable('expandAll'); return false;">
+                展開<i class="fa fa-expand" aria-hidden="true"></i>
+              </a>
+
+              <a href="#" class="btn btn-danger btn-xs" onclick="jQuery('#form_table').treetable('collapseAll'); return false;">
+                闔起<i class="fa fa-compress" aria-hidden="true"></i>
+              </a>
+
+              <a href="<{$xoops_requesturi}>" class="btn  btn-warning btn-xs">
+                重整畫面<i class="fa fa-refresh" aria-hidden="true"></i>
+              </a>
+
+              <a href="?op=op_form&ofsn=0&kind=nav_home">
+                <img src="img/add.gif"  alt="IN (根目錄) 建立子選單" title="IN (根目錄) 建立子選單">
+              </a>
+            </td>
+          </tr>
+        </tbody>
+        <!-- 根目錄結束 -->
+
+        <tbody id='sort'>
+          
+        </tbody>
+
+      </table>
+    </div>
+    
+
+
+
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
