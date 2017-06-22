@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      //載入Google Maps API 3
+      window.onload = loadScript;
+      function loadScript() { 
+         var script = document.createElement("script");  
+         script.type = "text/javascript";  
+         script.src = "http://maps.google.com/maps/api/js?callback=initialize";   
+         document.body.appendChild(script);
+      } 
+
+      function initialize() {
+        //設定地圖屬性，建立地圖
+        var myLatlng = new google.maps.LatLng(23.009676,120.2670563); 
+        //Google Map初始化
+        var myOptions = {    
+          zoom: 18,   
+          center: myLatlng,   
+          mapTypeId:
+          google.maps.MapTypeId.ROADMAP 
+        }  
+          var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+      } 
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>說明</h1>
+      <ul>
+        <li>網址：<a href="https://developers.google.com/maps/?hl=zh-tw" target="_blank">https://developers.google.com/maps/?hl=zh-tw</a></li>
+        <li>取得金鑰：<a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">https://developers.google.com/maps/documentation/javascript/</a></li>
+      </ul>      
+    </div>
+    <div class="container">
+      
+      <div id="map_canvas" style="width: 100%;height:300px;"></div>
+    </div>
+
+
+
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
