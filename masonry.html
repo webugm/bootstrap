@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container" style="margin-top: 50px 0px;">
+      <div class="row masonry">
+        <div class="col-md-4 item">
+          <h2>Image00001</h2>
+          <img src="img/masonry/Image00001.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-4 item">
+          <h2>Image00004</h2>
+          <img src="img/masonry/Image00004.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-4 item">
+          <h2>Image00002</h2>
+          <img src="img/masonry/Image00002.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-4 item">
+          <h2>Image00003</h2>
+          <img src="img/masonry/Image00003.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-4 item">
+          <h2>Image00005</h2>
+          <img src="img/masonry/Image00005.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="col-md-4 item">
+          <h2>Image00006</h2>
+          <img src="img/masonry/Image00006.jpg" alt="" class="img-responsive">
+        </div>
+      </div>
+    </div>
+
+
+
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="class/masonry/masonry.pkgd.min.js"></script>
+    <script>
+      $(function(){
+        $('.masonry').masonry({
+          itemSelector: '.item'
+        });
+      });
+    </script>
+  </body>
+</html>
