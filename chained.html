@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- 高亮度 -->
+    <link href="http://cdn.bootcss.com/prettify/r298/prettify.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/prettify/r298/prettify.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>jquery.chained.js</h1>
+
+      <script src="js/chained/jquery.chained.js?v=0.9.4" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript">
+        $(function() {          
+          /* For jquery.chained.js */
+          $("#series").chained("#mark");
+        });
+      </script>
+      <form action="" class="" id="f1">
+        <div class="row">
+          
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>廠牌</label>
+              <select id="mark" name="mark" class="form-control">
+                <option value="">--</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>            
+          </div>
+
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>系列</label>
+              <select id="series" name="series" class="form-control">
+                
+                <option value="">--</option>
+
+                <option value="series-1" class="bmw">1 series</option>
+                <option value="series-3" class="bmw">3 series</option>
+                <option value="series-5" class="bmw">5 series</option>
+                <option value="series-6" class="bmw">6 series</option>
+                <option value="series-7" class="bmw">7 series</option>
+
+                <option value="a1" class="audi">A1</option>
+                <option value="a3" class="audi">A3</option>
+                <option value="s3" class="audi">S3</option>
+                <option value="a4" class="audi">A4</option>
+                <option value="s4" class="audi">S4</option>
+                <option value="a5" class="audi">A5</option>
+                <option value="s5" class="audi">S5</option>
+                <option value="a6" class="audi">A6</option>
+                <option value="s6" class="audi">S6</option>
+                <option value="rs6" class="audi">RS6</option>
+                <option value="a8" class="audi">A8</option>
+              </select>
+            </div>            
+          </div>
+        </div>
+      </form>
+      <hr>
+      <pre class="prettyprint">
+
+
+        &lt;script src=&quot;js/chained/jquery.chained.js?v=0.9.4&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+          $(function() {          
+            /* For jquery.chained.js */
+            $(&quot;#series&quot;).chained(&quot;#mark&quot;);
+          });
+        &lt;/script&gt;
+        &lt;form action=&quot;&quot; class=&quot;&quot; id=&quot;f1&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            
+            &lt;div class=&quot;col-sm-3&quot;&gt;
+              &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;廠牌&lt;/label&gt;
+                &lt;select id=&quot;mark&quot; name=&quot;mark&quot; class=&quot;form-control&quot;&gt;
+                  &lt;option value=&quot;&quot;&gt;--&lt;/option&gt;
+                  &lt;option value=&quot;bmw&quot;&gt;BMW&lt;/option&gt;
+                  &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;            
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-sm-3&quot;&gt;
+              &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label&gt;系列&lt;/label&gt;
+                &lt;select id=&quot;series&quot; name=&quot;series&quot; class=&quot;form-control&quot;&gt;
+                  
+                  &lt;option value=&quot;&quot;&gt;--&lt;/option&gt;
+
+                  &lt;option value=&quot;series-1&quot; class=&quot;bmw&quot;&gt;1 series&lt;/option&gt;
+                  &lt;option value=&quot;series-3&quot; class=&quot;bmw&quot;&gt;3 series&lt;/option&gt;
+                  &lt;option value=&quot;series-5&quot; class=&quot;bmw&quot;&gt;5 series&lt;/option&gt;
+                  &lt;option value=&quot;series-6&quot; class=&quot;bmw&quot;&gt;6 series&lt;/option&gt;
+                  &lt;option value=&quot;series-7&quot; class=&quot;bmw&quot;&gt;7 series&lt;/option&gt;
+
+                  &lt;option value=&quot;a1&quot; class=&quot;audi&quot;&gt;A1&lt;/option&gt;
+                  &lt;option value=&quot;a3&quot; class=&quot;audi&quot;&gt;A3&lt;/option&gt;
+                  &lt;option value=&quot;s3&quot; class=&quot;audi&quot;&gt;S3&lt;/option&gt;
+                  &lt;option value=&quot;a4&quot; class=&quot;audi&quot;&gt;A4&lt;/option&gt;
+                  &lt;option value=&quot;s4&quot; class=&quot;audi&quot;&gt;S4&lt;/option&gt;
+                  &lt;option value=&quot;a5&quot; class=&quot;audi&quot;&gt;A5&lt;/option&gt;
+                  &lt;option value=&quot;s5&quot; class=&quot;audi&quot;&gt;S5&lt;/option&gt;
+                  &lt;option value=&quot;a6&quot; class=&quot;audi&quot;&gt;A6&lt;/option&gt;
+                  &lt;option value=&quot;s6&quot; class=&quot;audi&quot;&gt;S6&lt;/option&gt;
+                  &lt;option value=&quot;rs6&quot; class=&quot;audi&quot;&gt;RS6&lt;/option&gt;
+                  &lt;option value=&quot;a8&quot; class=&quot;audi&quot;&gt;A8&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;            
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      </pre>
+    </div>
+    <hr>
+
+  
+
+
+
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
