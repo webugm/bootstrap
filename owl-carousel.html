@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>owl-carousel</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <!-- owl-carousel  -->       
+    <link href="owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/assets/owl.theme.default.css" rel="stylesheet">
+    <script src="owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      //owl carousel
+      jQuery(document).ready(function () {
+
+          jQuery("#owl-slider").owlCarousel({
+          loop:true,
+          margin:0,
+          nav:false,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:4
+              }
+          }
+        });
+      });
+    </script>
+
+    <!--new arrivals-->
+    <section class="new-arrivals">
+        <div class="container">
+            <h2 class="section-heading">New Arrivals</h2>
+
+            <!--owl carousel-->
+            <div class="row">
+                <div id="owl-slider" class="col-sm-12 owl-carousel owl-theme">
+
+                    <div class="item">
+                        <div class="item_holder">
+                            <a href="#"><img src="images/women/1.jpg" alt="" class="img-responsive"></a>
+                            <div class="title">
+                                <h5>Sky-Blue <br>Short Skirt</h5>
+                                <span class="price">$29.99</span>
+                            </div>
+                        </div><!--item holder-->
+                    </div> <!--item loop-->
+                    <div class="item">
+                        <div class="item_holder">
+                            <a href="#"><img src="images/men/1.jpg" alt="" class="img-responsive"></a>
+                            <div class="title">
+                                <h5>Dark-Blue <br>Men's t-shirt</h5>
+                                <span class="price">$19.99 <del>$25.99</del></span>
+                            </div>
+                        </div><!--item holder-->
+                    </div> <!--item loop-->
+                    <div class="item">
+                        <div class="item_holder">
+                            <a href="#"><img src="images/women/2.jpg" alt="" class="img-responsive"></a>
+                            <div class="title">
+                                <h5>Black <br>Short Skirt</h5>
+                                <span class="price">$29.99</span>
+                            </div>
+                        </div><!--item holder-->
+                    </div> <!--item loop-->
+                    <div class="item">
+                        <div class="item_holder">
+                            <a href="#"><img src="images/men/3.jpg" alt="" class="img-responsive"></a>
+                            <div class="title">
+                                <h5>Black <br>analog watch</h5>
+                                <span class="price">$45.99</span>
+                            </div>
+                        </div><!--item holder-->
+                    </div> <!--item loop-->
+                    <div class="item">
+                        <div class="item_holder">
+                            <a href="#"><img src="images/men/4.jpg" alt="" class="img-responsive"></a>
+                            <div class="title">
+                                <h5>Black & blue <br>Backpack</h5>
+                                <span class="price">$45.99</span>
+                            </div>
+                        </div><!--item holder-->
+                    </div> <!--item loop-->
+                    <div class="item">
+                        <div class="item_holder">
+                            <a href="#"><img src="images/men/5.jpg" alt="" class="img-responsive"></a>
+                            <div class="title">
+                                <h5>Black & blue <br>Laptop bag</h5>
+                                <span class="price">$45.99</span>
+                            </div>
+                        </div><!--item holder-->
+                    </div> <!--item loop-->
+                </div>
+            </div>
+            <!--owl end-->
+        </div>
+    </section>
+
+
+
+
+    <!-- 程式 -->
+    <link href="http://cdn.bootcss.com/prettify/r298/prettify.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/prettify/r298/prettify.js"></script>
+    
+    <div class="container">
+      <h2>引入</h2>
+      <pre class="prettyprint"> 
+        &lt;!-- owl-carousel  --&gt;       
+           &lt;link href=&quot;owl-carousel/assets/owl.carousel.css&quot; rel=&quot;stylesheet&quot;&gt;
+           &lt;link href=&quot;owl-carousel/assets/owl.theme.default.css&quot; rel=&quot;stylesheet&quot;&gt;
+           &lt;script src=&quot;owl-carousel/owl.carousel.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+           &lt;script type=&quot;text/javascript&quot;&gt;
+             //owl carousel
+             jQuery(document).ready(function () {
+
+                 jQuery(&quot;#owl-slider&quot;).owlCarousel({
+                 loop:true,
+                 margin:0,
+                 nav:false,
+                 responsive:{
+                     0:{
+                         items:1
+                     },
+                     600:{
+                         items:3
+                     },
+                     1000:{
+                         items:4
+                     }
+                 }
+               });
+             });
+           &lt;/script&gt;
+        
+      </pre>
+
+    </div>
+
+
+
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
