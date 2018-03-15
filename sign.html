@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="keywords" content="網頁設計,網頁教學,架站,xoops模組開發,xoops佈景開發">
+    <meta name="description" content="育將電腦工作室，台南市永康區大灣路158號,TEL：0921560421,mail：tawan158@ugm.com.tw">
+    <meta name="robots" content="index,follow">
+    <meta name="rating" content="general">
+    <meta name="author" content="育將電腦工作室">
+    <meta name="generator" content="育將電腦工作室">
+    <meta property="og:title" content="Bootstrap Plugins 育將電腦工作室" >
+    <meta property="og:url" content="http://bootstrap.ugm.com.tw/xoops.html">
+    <meta property="og:image" content="http://bootstrap.ugm.com.tw/img/namecard.jpg">
+    <meta property="og:description" content="育將電腦工作室，台南市永康區大灣路158號,TEL：0921560421,mail：tawan158@ugm.com.tw" >
+    <title>簽名</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container" style="margin-top:50px;">
+      <div id="signature"></div>
+      <button type='button' id="clear">清除</button>
+      <button type='button' id="save">儲存</button>
+
+
+      
+    </div>
+     
+    <!-- you load jquery somewhere before jSignature ... -->
+    <script src="class/sign/libs/jquery.js"></script>
+    <script src="class/sign/libs/jSignature.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("#signature").jSignature({color:"#00f",lineWidth:5,"background-color":"#dcdcdc"});
+          $('#clear').click(function(){
+              $("#signature").jSignature('clear');
+          });
+          $('#save').click(function(){
+              $.post('save.php', { sig: $("#signature").jSignature('getData', 'image')},
+              function(sn) {
+                  location.href='show.php?sn=' + sn;
+              });
+          });
+
+
+        })
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
